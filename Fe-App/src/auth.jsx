@@ -4,7 +4,7 @@ import Signup from "./component.jsx/signup"
 
 const Auth=()=>{
     // const [auth , setAuth] =useState("signup")
-    const [auth , setAuth] = useState("signup")
+    const [auth , setAuth] = useState("login")
     return(
         <>
      {auth=="login"&&<Login setAuth={setAuth}/>}

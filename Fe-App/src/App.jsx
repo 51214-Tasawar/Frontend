@@ -9,26 +9,15 @@ import AboutUs from "./Products.jsx/About";
 import Services from "./Products.jsx/Services";
 import Create from "./Products.jsx/create";
 import Get from "./Products.jsx/get";
+import Layout from "./layouts/layout";
 
 const App=()=>{
   
   return(
     <>
-    <Routes>
-      <Route path="/" element={<Auth/>}></Route>
-      <Route path="/Index" element={<Index />}></Route>
-      <Route path="/products">
-      <Route  element={<Products/>}></Route>
-      <Route path="/Create-Product"> element={<Create/>}</Route>
-      <Route path="/Get-Products" element={<Get/>}></Route>
-      </Route>
-      <Route path="/homepage" element={<Homepage/>}></Route>
-      <Route path="/contactUs" element={<ContactUs/>}></Route>
-      <Route  path="/AboutUs" element={<AboutUs/>}></Route>
-      <Route path="/services" element={<Services/>}></Route>
-    </Routes>
-   
-   
+    <div>
+      <Layout />
+   </div>
     </>
   )
 }
