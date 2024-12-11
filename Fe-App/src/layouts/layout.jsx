@@ -1,12 +1,15 @@
 import Navbar from "./nev-bar"
 import SideBar from "./side-bar"
 
-const Layout =()=>{
+const Layout =({children})=>{
     return(
         <>
         <div>
             <Navbar/>
-            <SideBar/>
+           <div className="w-full h-full flex ">
+             <SideBar/>
+            {children}
+           </div>
         </div>
         </>
     )
